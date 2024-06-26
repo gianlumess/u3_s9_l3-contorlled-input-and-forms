@@ -2,8 +2,13 @@ import { Component } from "react";
 import { Badge, Card } from "react-bootstrap";
 
 class SingleBook extends Component {
+  state = {
+    selected: false,
+  };
+
   render() {
     const { book } = this.props;
+
     return (
       <Card>
         <Card.Img variant="top" src={book.img} />

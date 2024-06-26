@@ -9,6 +9,7 @@ import history from "../src/books/history.json";
 import horror from "../src/books/horror.json";
 import romance from "../src/books/romance.json";
 import scifi from "../src/books/scifi.json";
+import BookList from "./components/BookList";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MyNav />
       <Container>
         <Welcome />
+        <BookList books={horror} />
       </Container>
       <MyFooter />
     </>
